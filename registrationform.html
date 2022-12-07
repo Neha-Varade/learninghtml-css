@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .form{
+        width: 100%;
+        
+    }
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .input-wrapper>input {
+        margin-top: 5px;
+        margin-bottom: 5px;
+        
+    }
+
+    .ml-5 {
+        margin-left: 5px;
+    }
+
+    .mt-5 {
+        margin-top: 5px;
+    }
+
+    .mb-5 {
+        margin-bottom: 5px;
+    }
+  input[type="number"]{
+    height: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: aqua;
+    border: 2px solid crimson;
+    border-radius: 5px;
+  }
+    input[type="text"]{
+        height: 30px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: rgb(5, 22, 15);
+        border: 2px solid rgb(53, 97, 142);
+        border-radius: 5px;
+    }
+    form{
+        background-color: antiquewhite;
+        
+    }
+    .button{
+        width: 100px;
+        height: 50px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        background-color: blueviolet;
+        border: 2px solid gray;
+        border-radius: 5px;
+        text-align: center;
+        text-transform: capitalize;
+        font-weight: bold;
+        box-shadow: 0px 0px 10px 10px rgba(13, 9, 9);
+        cursor: pointer;
+        
+        
+    }
+    .button:hover{
+        background-color: limegreen;
+    }
+     .button:focus{
+        outline-color:red;/*instead of transparent*/    
+        outline-style: solid;
+        box-shadow: 0px 0px 0px 10px rgb(231, 136, 27);
+     }
+     .button:active{
+        background-color: yellow;
+     }
+</style>
+
+<body>
+    <h1>VAT registration Form</h1>
+
+    <form class="form">
+        <div>
+            <label for="fname">Full name</label>
+            <div>
+                <input type="text" placeholder="First" id="fname" name="fname">
+                <input type="text" placeholder=" Last" id="lname" name="lname">
+            </div>
+        </div>
+
+        <div class="input-wrapper">
+            <lable for="bname">Buisness name</lable>
+            <input type="text" id="bname" name="bname">
+        </div>
+
+        <div class="input-wrapper">
+            <lable for="address">Address of principle place of buisness</lable>
+
+            <input type="text" id="address" name="address">
+            <input type="text" id="address" name="address">
+        </div>
+        <div class="mt-5 mb-5">
+            <input type="text" placeholder="city" id="city" name="region">
+            <input type="text" class="ml-5" placeholder="region" id="region" name="region">
+        </div>
+
+        <div class="mt-5 mb-5">
+            <input type="number" placeholder="postal zpb code " id="address" name="address">
+            <input type="text" placeholder="Country" id="address" name="address">
+        </div>
+        <div class="input-wrapper">
+            <label for="phone">phone</label>
+            <input type="number" placeholder="### ### ####" id="phone" name="phone">
+        </div>
+        <div class="input-wrapper">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email">
+        </div>
+        
+        
+            
+            <button class="button">Submit</button>
+        
+
+    </form>
+</body>
+
+</html>
